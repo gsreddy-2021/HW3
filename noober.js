@@ -16,6 +16,103 @@ function pageLoad() {
     levelOfService = 'Noober XL'        //If the ride opts for a larger car with more than 3 passengers
   } else {levelOfService = 'Noober X'}  //This is the normal level of service without any exceptions
 
+  console.log(levelOfService)
+
+  //Now we start setting the passenger or ride details such as Name, Phone, Pickup & Dropoff location and #ofpassengers by ride
+
+  if (ride.length == 1){
+    passenger1Name = ride[0].passengerDetails.first + ' ' + ride[0].passengerDetails.last
+    passenger1Phone = ride[0].passengerDetails.phoneNumber
+    passenger1PickupAddressLine1 = ride[0].pickupLocation.address
+    passenger1PickupAddressLine2 = ride[0].pickupLocation.city + ', ' + ride[0].pickupLocation.state + ' ' + ride[0].pickupLocation.zip
+    passenger1DropoffAddressLine1 = ride[0].dropoffLocation.address
+    passenger1DropoffAddressLine2 = ride[0].dropoffLocation.city + ', ' + ride[0].dropoffLocation.state + ' ' + ride[0].dropoffLocation.zip
+    passenger1NumberOfPassengers = ride[0].numberOfPassengers
+    console.log(passenger1Name)
+    console.log(passenger1Phone)
+    console.log(passenger1PickupAddressLine1)
+    console.log(passenger1PickupAddressLine2)
+    console.log(passenger1DropoffAddressLine1)
+    console.log(passenger1DropoffAddressLine2)
+    console.log(passenger1NumberOfPassengers)
+
+  } else if (ride.length == 2) {
+    passenger1Name = ride[0].passengerDetails.first + ' ' + ride[0].passengerDetails.last
+    passenger1Phone = ride[0].passengerDetails.phoneNumber
+    passenger1PickupAddressLine1 = ride[0].pickupLocation.address
+    passenger1PickupAddressLine2 = ride[0].pickupLocation.city + ', ' + ride[0].pickupLocation.state + ' ' + ride[0].pickupLocation.zip
+    passenger1DropoffAddressLine1 = ride[0].dropoffLocation.address
+    passenger1DropoffAddressLine2 = ride[0].dropoffLocation.city + ', ' + ride[0].dropoffLocation.state + ' ' + ride[0].dropoffLocation.zip
+    passenger1NumberOfPassengers = ride[0].numberOfPassengers
+    console.log(passenger1Name)
+    console.log(passenger1Phone)
+    console.log(passenger1PickupAddressLine1)
+    console.log(passenger1PickupAddressLine2)
+    console.log(passenger1DropoffAddressLine1)
+    console.log(passenger1DropoffAddressLine2)
+    console.log(passenger1NumberOfPassengers)
+    
+    passenger2Name = ride[1].passengerDetails.first + ' ' + ride[1].passengerDetails.last
+    passenger2Phone = ride[1].passengerDetails.phoneNumber
+    passenger2NumberOfPassengers = ride[1].numberOfPassengers
+    passenger2PickupAddressLine2 = ride[1].pickupLocation.city + ', ' + ride[1].pickupLocation.state + ' ' + ride[1].pickupLocation.zip
+    passenger2DropoffAddressLine1 = ride[1].dropoffLocation.address
+    passenger2DropoffAddressLine2 = ride[1].dropoffLocation.city + ', ' + ride[1].dropoffLocation.state + ' ' + ride[1].dropoffLocation.zip
+    passenger2PickupAddressLine1 = ride[1].pickupLocation.address
+    console.log(passenger1Name)
+    console.log(passenger1Phone)
+    console.log(passenger1PickupAddressLine1)
+    console.log(passenger1PickupAddressLine2)
+    console.log(passenger1DropoffAddressLine1)
+    console.log(passenger1DropoffAddressLine2)
+    console.log(passenger1NumberOfPassengers)
+
+  } else if (ride.length == 3)  {
+    passenger1Name = ride[0].passengerDetails.first + ' ' + ride[0].passengerDetails.last
+    passenger1Phone = ride[0].passengerDetails.phoneNumber
+    passenger1PickupAddressLine1 = ride[0].pickupLocation.address
+    passenger1PickupAddressLine2 = ride[0].pickupLocation.city + ', ' + ride[0].pickupLocation.state + ' ' + ride[0].pickupLocation.zip
+    passenger1DropoffAddressLine1 = ride[0].dropoffLocation.address
+    passenger1DropoffAddressLine2 = ride[0].dropoffLocation.city + ', ' + ride[0].dropoffLocation.state + ' ' + ride[0].dropoffLocation.zip
+    passenger1NumberOfPassengers = ride[0].numberOfPassengers
+    console.log(passenger1Name)
+    console.log(passenger1Phone)
+    console.log(passenger1PickupAddressLine1)
+    console.log(passenger1PickupAddressLine2)
+    console.log(passenger1DropoffAddressLine1)
+    console.log(passenger1DropoffAddressLine2)
+    console.log(passenger1NumberOfPassengers)
+    
+    passenger2Name = ride[1].passengerDetails.first + ' ' + ride[1].passengerDetails.last
+    passenger2Phone = ride[1].passengerDetails.phoneNumber
+    passenger2PickupAddressLine1 = ride[1].pickupLocation.address
+    passenger2PickupAddressLine2 = ride[1].pickupLocation.city + ', ' + ride[1].pickupLocation.state + ' ' + ride[1].pickupLocation.zip
+    passenger2DropoffAddressLine1 = ride[1].dropoffLocation.address
+    passenger2DropoffAddressLine2 = ride[1].dropoffLocation.city + ', ' + ride[1].dropoffLocation.state + ' ' + ride[1].dropoffLocation.zip
+    passenger2NumberOfPassengers = ride[1].numberOfPassengers
+    console.log(passenger1Name)
+    console.log(passenger1Phone)
+    console.log(passenger1PickupAddressLine1)
+    console.log(passenger1PickupAddressLine2)
+    console.log(passenger1DropoffAddressLine1)
+    console.log(passenger1DropoffAddressLine2)
+    console.log(passenger1NumberOfPassengers)
+    
+    passenger3Name = ride[2].passengerDetails.first + ' ' + ride[0].passengerDetails.last
+    passenger3Phone = ride[2].passengerDetails.phoneNumber
+    passenger3PickupAddressLine1 = ride[2].pickupLocation.address
+    passenger3PickupAddressLine2 = ride[2].pickupLocation.city + ', ' + ride[2].pickupLocation.state + ' ' + ride[2].pickupLocation.zip
+    passenger3DropoffAddressLine1 = ride[2].dropoffLocation.address
+    passenger3DropoffAddressLine2 = ride[2].dropoffLocation.city + ', ' + ride[2].dropoffLocation.state + ' ' + ride[2].dropoffLocation.zip
+    passenger3NumberOfPassengers = ride[2].numberOfPassengers
+    console.log(passenger1Name)
+    console.log(passenger1Phone)
+    console.log(passenger1PickupAddressLine1)
+    console.log(passenger1PickupAddressLine2)
+    console.log(passenger1DropoffAddressLine1)
+    console.log(passenger1DropoffAddressLine2)
+    console.log(passenger1NumberOfPassengers)
+  }
 
   // these variables map to the elements on the finished page;
   // assign the proper value to each variable
