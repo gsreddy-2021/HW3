@@ -12,6 +12,7 @@ function pageLoad() {
   // assign the proper value to each variable
 
   // levelOfService
+  levelOfService = 'tacos'  //Sets the title of the page
   // passenger1Name, passenger1Phone, passenger1NumberOfPassengers
   // passenger1PickupAddressLine1, passenger1PickupAddressLine2
   // passenger1DropoffAddressLine1, passenger1DropoffAddressLine2
